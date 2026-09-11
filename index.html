@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Consultoria personalizada de Pedro Romani com treino no app, feedbacks, acompanhamento e evolução constante.">
+  <title>Pedro Romani | Consultoria Personal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a href="#inicio" class="logo" aria-label="Pedro Romani - início">
+        <img src="assets/logo.jpg" alt="Logo Pedro Romani Treinador">
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="desktop-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#consultoria">Consultoria</a>
+        <a href="#contato" class="nav-cta">Quero começar</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-top">
+      <img src="assets/logo.jpg" alt="Logo Pedro Romani Treinador">
+      <button class="close-menu" id="closeMenu" aria-label="Fechar menu">×</button>
+    </div>
+
+    <nav>
+      <a href="#inicio">Início <span>→</span></a>
+      <a href="#sobre">Sobre <span>→</span></a>
+      <a href="#resultados">Resultados <span>→</span></a>
+      <a href="#consultoria">Consultoria <span>→</span></a>
+    </nav>
+
+    <a href="#contato" class="mobile-menu-cta">Quero minha consultoria</a>
+  </aside>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Treino com estratégia. <span>Resultado com propósito.</span></h1>
+          <p>
+            Musculação, estética e postura em um acompanhamento individual,
+            pensado para sua rotina, seu objetivo e sua evolução.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contato" class="button button-light">Quero minha consultoria</a>
+            <a href="#resultados" class="button button-outline">Ver resultados</a>
+          </div>
+
+          <div class="stats">
+            <div><strong>+300</strong><span>alunos acompanhados</span></div>
+            <div><strong>10+</strong><span>anos de experiência</span></div>
+            <div><strong>100%</strong><span>treino personalizado</span></div>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="assets/personal.jpg" alt="Pedro Romani em competição de fisiculturismo">
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container">
+        <div class="section-heading dark-heading">
+          <h2>Ciência aplicada ao seu treino.</h2>
+          <p>
+            Treinamento personalizado, estética, postura e
+            musculação avançada. A proposta é transformar conhecimento técnico em um
+            plano de treino objetivo, individual e possível de seguir.
+          </p>
+        </div>
+
+        <div class="resume-list">
+          <article class="resume-line">
+            <strong>&gt; Pós em Estética e Postura</strong>
+          </article>
+
+          <article class="resume-line">
+            <strong>&gt; Pós em Musculação Avançada</strong>
+          </article>
+        </div>
+
+        <div class="learning-block">
+          <h1 class="learning-heading">Meus aprendizados</h1>
+
+          <div class="learning-carousel">
+            <button class="learning-arrow prev" id="learningPrev" type="button" aria-label="Mídia anterior">‹</button>
+
+            <div class="learning-viewport" id="learningViewport">
+              <div class="learning-track">
+                <article class="learning-card">
+                  <img src="assets/certificado2.jpg" alt="Certificado de Estética e Postura">
+                </article>
+
+                <article class="learning-card">
+                  <video controls muted playsinline preload="metadata" poster="assets/certificado2.jpg">
+                    <source src="assets/certificado2.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                  </video>
+                </article>
+
+                <article class="learning-card">
+                  <img src="assets/certificado1.jpg" alt="Certificado de Musculação Avançada">
+                </article>
+
+                <article class="learning-card">
+                  <video controls muted playsinline preload="metadata" poster="assets/certificado1.jpg">
+                    <source src="assets/certificado1.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                  </video>
+                </article>
+              </div>
+            </div>
+
+            <button class="learning-arrow next" id="learningNext" type="button" aria-label="Próxima mídia">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section results" id="resultados">
+      <div class="container">
+        <div class="section-heading">
+          <h2>A evolução aparece quando o processo é consistente.</h2>
+          <p>Algumas provas sociais de quem já confiou no meu trabalho.</p>
+        </div>
+
+        <div class="results-carousel" id="resultsCarousel">
+          <button class="carousel-arrow prev" id="resultsPrev" type="button" aria-label="Resultado anterior">‹</button>
+
+          <div class="results-viewport" id="resultsViewport">
+            <div class="results-track">
+              <article class="result-photo">
+                <img src="assets/comparacao1_foto_antiga.jpg" alt="Frente antiga">
+              </article>
+
+              <article class="result-photo">
+                <img src="assets/comparacao1.jpg" alt="Frente atual">
+              </article>
+
+              <article class="result-photo">
+                <img src="assets/comparacao1_costas_foto_antiga.jpg" alt="Costas antiga">
+              </article>
+
+              <article class="result-photo">
+                <img src="assets/comparacao1_costas.jpg" alt="Costas atual">
+              </article>
+
+              <article class="result-photo">
+                <img src="assets/comparacao_2_foto_antiga.jpg" alt="Frente antiga">
+              </article>
+
+              <article class="result-photo">
+                <img src="assets/comparacao2.jpg" alt="Frente atual">
+              </article>
+
+              <article class="result-photo">
+                <img src="assets/comparacao2_costas_foto_antiga.jpg" alt="Costa antiga">
+              </article>
+
+              <article class="result-photo">
+                <img src="assets/comparacao2_costas.jpg" alt="Costa atual">
+              </article>
+            </div>
+          </div>
+
+          <button class="carousel-arrow next" id="resultsNext" type="button" aria-label="Próximo resultado">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section consulting" id="consultoria">
+      <div class="container">
+        <div class="section-heading dark-heading">
+          <h2>O que você recebe:</h2>
+        </div>
+
+        <div class="benefits">
+          <article><span>✓</span>
+            <div>
+              <h3>Treino Personalizado no App</h3>
+              <p>Seu treino organizado para sua rotina, experiência e objetivo.</p>
+            </div>
+          </article>
+          <article><span>▶</span>
+            <div>
+              <h3>Vídeos Demonstrativos</h3>
+              <p>Referências visuais para ajudar na execução correta dos exercícios.</p>
+            </div>
+          </article>
+          <article><span>✓</span>
+            <div>
+              <h3>Orientações e Feedbacks</h3>
+              <p>Envie dúvidas e vídeos e receba ajustes sobre seu desempenho.</p>
+            </div>
+          </article>
+          <article><span>↗</span>
+            <div>
+              <h3>Interatividade</h3>
+              <p>Registre cargas, percepção do treino e evolução ao longo do processo.</p>
+            </div>
+          </article>
+          <article><span>↑</span>
+            <div>
+              <h3>Evolução Constante</h3>
+              <p>Treinos ajustados de acordo com sua resposta e seu progresso.</p>
+            </div>
+          </article>
+          <article><span>⇄</span>
+            <div>
+              <h3>Comparação de Resultados</h3>
+              <p>Acompanhamento da sua evolução ao longo das semanas.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="videos-block">
+          <div class="section-heading dark-heading compact">
+            <h2>Correções e dicas em tempo real ou online</h2>
+          </div>
+
+          <div class="training-videos">
+            <video controls muted playsinline preload="metadata">
+              <source src="assets/video1.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+            </video>
+
+            <video controls muted playsinline preload="metadata">
+              <source src="assets/video2.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section instagram-section" id="instagram">
+      <div class="container instagram-content">
+        <div class="section-heading dark-heading compact">
+          <h2>Siga o meu trabalho no Instagram</h2>
+          <p>Acompanhe treinos, bastidores, dicas e a rotina do meu trabalho.</p>
+        </div>
+
+        <a class="instagram-photo" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Pedro Romani">
+          <img src="assets/instagram.jpg" alt="Instagram de Pedro Romani">
+        </a>
+      </div>
+    </section>
+
+    <section class="cta" id="contato">
+      <div class="container cta-content">
+        <div>
+          <h2>Seu próximo resultado começa com um treino feito para você.</h2>
+          <p>Entre em contato e conheça a consultoria personalizada.</p>
+        </div>
+
+        <a class="button button-light"
+          href="https://wa.me/5511991907814?text=Olá%20Pedro!%20Quero%20saber%20mais%20sobre%20a%20consultoria."
+          target="_blank" rel="noopener noreferrer">
+          Quero minha consultoria
+        </a>
+      </div>
+    </section>
+  </main>
+  <a class="whatsapp-fixed" href="https://wa.me/11991907814" target="_blank" rel="noopener" title="Fale conosco"
+    aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"><img src="./assets/whatsapp.jpg" alt=""></i>
+  </a>
+  <footer class="footer">
+    <div class="container footer-content">
+      <img src="assets/logo.jpg" alt="Logo Pedro Romani Treinador">
+      <p>© <span id="year"></span> Pedro Romani. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

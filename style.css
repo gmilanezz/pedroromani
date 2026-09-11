@@ -147,7 +147,6 @@ h2 {
   display: none;
 }
 
-/* MENU MOBILE - drawer lateral */
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -173,7 +172,7 @@ h2 {
   padding: 22px;
   display: flex;
   flex-direction: column;
-  background: var(--nav);
+  background: var(--purple);
   color: var(--white);
   transform: translateX(100%);
   transition: transform .28s ease;
@@ -194,14 +193,12 @@ h2 {
 
 .mobile-menu-top img {
   width: 130px;
-  height: 60px;
   object-fit: cover;
 }
 
 .close-menu {
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(255, 255, 255, .18);
   border-radius: 50%;
   background: transparent;
   color: var(--white);

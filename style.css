@@ -698,6 +698,115 @@ h2 {
 }
 
 .instagram-photo img {
-  max-height: 800px;
   object-fit: cover;
+}
+
+
+/* PLANOS */
+.plans {
+  background: var(--white);
+}
+
+.plans-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.plan-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 16px 40px rgba(42, 10, 61, .08);
+}
+
+.plan-card.featured {
+  border: 2px solid var(--purple);
+}
+
+.plan-period {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--purple);
+  font-size: .85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.plan-card h3 {
+  font-size: clamp(2.2rem, 10vw, 3.2rem);
+  letter-spacing: -.05em;
+}
+
+.old-price {
+  color: var(--muted);
+  font-size: .9rem;
+  text-decoration: line-through;
+}
+
+.plan-installment {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.plan-saving {
+  margin-top: 8px;
+  color: var(--purple);
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.discount-badge {
+  align-self: flex-start;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #efe4ff;
+  color: var(--purple);
+  font-size: .72rem;
+  font-weight: 800;
+}
+
+.plan-card ul {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.plan-button {
+  min-height: 52px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: var(--purple);
+  color: var(--white);
+  font-weight: 800;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.plan-button:hover {
+  transform: translateY(-2px);
+  background: var(--nav-soft);
+}
+
+@media (min-width: 900px) {
+  .plans-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+  }
+
+  .plan-card.featured {
+    transform: translateY(-10px);
+  }
 }

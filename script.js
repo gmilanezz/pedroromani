@@ -55,3 +55,22 @@ if (learningViewport && learningPrev && learningNext) {
   learningPrev.addEventListener("click", () => scrollLearning(-1));
   learningNext.addEventListener("click", () => scrollLearning(1));
 }
+// Carrossel de resultados
+const resultsViewport = document.getElementById("resultsViewport");
+const resultsPrev = document.getElementById("resultsPrev");
+const resultsNext = document.getElementById("resultsNext");
+
+if (resultsViewport && resultsPrev && resultsNext) {
+  const scrollResults = (direction) => {
+    const card = resultsViewport.querySelector(".result-photo");
+    const track = resultsViewport.querySelector(".results-track");
+    if (!card) return;
+    const gap = track ? parseFloat(getComputedStyle(track).gap) || 0 : 0;
+    resultsViewport.scrollBy({
+      left: direction * (card.getBoundingClientRect().width + gap),
+      behavior: "smooth"
+    });
+  };
+  resultsPrev.addEventListener("click", () => scrollResults(-1));
+  resultsNext.addEventListener("click", () => scrollResults(1));
+}
